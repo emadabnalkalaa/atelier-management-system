@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atelier System</title>
+</head>
+
+<body>
+
+    <h1>Atelier Management System</h1>
+
+    <h2>Create Order</h2>
+
+    <input type="text" id="name" placeholder="Customer Name"><br><br>
+    <input type="text" id="material" placeholder="Material"><br><br>
+    <input type="text" id="color" placeholder="Color"><br><br>
+    <input type="text" id="price" placeholder="Price"><br><br>
+
+    <button onclick="addOrder()">Add Order</button>
+
+    <hr>
+
+    <h2>Orders</h2>
+    <ul id="ordersList"></ul>
+
+    <script>
+        function addOrder() {
+            let name = document.getElementById("name").value;
+            let material = document.getElementById("material").value;
+            let color = document.getElementById("color").value;
+            let price = document.getElementById("price").value;
+
+            let list = document.getElementById("ordersList");
+
+            let item = document.createElement("li");
+            item.textContent = name + " - " + material + " - " + color + " - " + price;
+
+            list.appendChild(item);
+        }
+    </script>
+
+</body>
+
+</html>
