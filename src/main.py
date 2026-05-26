@@ -17,7 +17,6 @@ class Order:
         print("Color:", self.color)
         print("Price:", self.price)
 
-
 def create_order():
     name = input("Enter customer name: ")
     material = input("Enter material: ")
