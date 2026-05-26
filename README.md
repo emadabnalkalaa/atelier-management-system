@@ -17,3 +17,13 @@ Python
    ```bash
    git clone https://github.com/emadabnalkalaa/atelier-management-system.git
 Simple system for managing orders in a tailoring atelier
+This project uses GitHub Actions for Continuous Integration (CI).
+
+Configured Workflows
+Tests Workflow
+
+Runs automated tests automatically on every push using GitHub Actions.
+
+Build Workflow
+
+Builds the project automatically after every push using GitHub Actions.
